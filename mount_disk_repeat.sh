@@ -8,7 +8,7 @@ do
 		if [[ $i -lt 10 ]]; then drive="/Drive/00$i"; fi
 		if [[ $i -gt 9 ]]; then drive="/Drive/0$i"; fi
 		time_now=$(date '+%Y/%m/%d %H:%M:%S')
-		[ ! -d $drive ] && mount -a && echo "$time_now Directory $drive DOES NOT exists."
+		[ ! -d $drive ] && mount -a && echo "$time_now Directory $drive DOES NOT exists." >> /home/rfi212/Documents/mount.log
 		#[ ! -d $drive ] && echo "Directory $drive DOES NOT exists."
 		#if [[ -d $drive ]]; then
 		#	echo "$drive exists."
