@@ -1,0 +1,11 @@
+[Unit]
+Description=Chia Plotting Service
+After=network.service
+
+[Service]
+Type=simple
+User=rfi212
+ExecStart=/bin/bash /home/rfi212/plotting_chia.sh
+
+[Install]
+WantedBy=multi-user.target
