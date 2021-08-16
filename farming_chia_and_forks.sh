@@ -1,11 +1,10 @@
 #! /bin/sh
 # chia
 #source ~/chia-blockchain/activate
-source ~/chia-blockchain/venv/bin/activate
-chia start farmer 
+source /home/rfi212/chia-blockchain/venv/bin/activate; chia start farmer;deactivate
 #sleep 300
 #chia show -a node.chia.net:8444
-deactivate
+#deactivate
 # flax
 #source ~/flax-blockchain/activate
 #flax start farmer
